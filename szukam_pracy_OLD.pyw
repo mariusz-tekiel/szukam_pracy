@@ -1,5 +1,10 @@
-# Wersja 2 programu
+# --- Automatyczne ustawienie zmiennych środowiskowych ---
 import os
+
+os.environ["ADZUNA_APP_ID"] = "62844f44"
+os.environ["ADZUNA_APP_KEY"] = "818aa1df70e76f3730095c470c83b368"
+
+# --- Wersja 2 programu ---
 import sys
 import webbrowser
 import datetime as dt
@@ -21,6 +26,7 @@ MAX_BATCH = 10
 USER_AGENT = "SzukamPracy/1.2 (+local)"
 ADZUNA_APP_ID = os.getenv("ADZUNA_APP_ID")
 ADZUNA_APP_KEY = os.getenv("ADZUNA_APP_KEY")
+
 
 @dataclass
 class JobOffer:
